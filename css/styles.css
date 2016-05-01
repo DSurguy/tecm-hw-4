@@ -1,0 +1,15 @@
+body{
+	padding-top: 128px;
+}
+.section {
+	padding-top: 128px;
+}
+
+@media (min-width: 768px) {
+	body{
+		padding-top: 64px;
+	}
+	.section {
+		padding-top: 64px;
+	}
+}

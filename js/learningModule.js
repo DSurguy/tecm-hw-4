@@ -85,7 +85,7 @@ LearningModule.prototype._getWhyMessage = function (){
 		return false;
 	});
 
-	if( why ){
+	if( why.length ){
 		return why.find('[data-text]').html().trim();
 	}
 	else{
