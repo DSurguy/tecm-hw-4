@@ -4,6 +4,16 @@ body{
 .section {
 	padding-top: 128px;
 }
+.section p,
+.section ul,
+.section li{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+}
+
+[data-module=learning] img{
+	max-width: 100%;
+}
 
 @media (min-width: 768px) {
 	body{
