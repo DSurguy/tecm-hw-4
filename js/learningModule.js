@@ -43,7 +43,7 @@ LearningModule.prototype._bindEvents = function (){
 };
 
 LearningModule.prototype.validateAnswer = function (){
-	if( this.form[0][this.inputName].value == this.correctAnswer ){
+	if( this.form.find('input:checked').val() == this.correctAnswer ){
 		this._updateResponse(true, '');
 	}
 	else{
@@ -79,16 +79,16 @@ LearningModule.prototype._updateResponse = function (isValid, why){
 LearningModule.prototype._getWhyMessage = function (){
 	var that = this;
 	var why = this.container.find('.why .why-text:not([default])').filter(function (index, item){
-		if( $(item).find('[data-value]').html().trim() == that.correctAnswer ){
+		if( $.trim($(item).find('[data-value]').html()) == that.correctAnswer ){
 			return true;
 		}
 		return false;
 	});
 
 	if( why.length ){
-		return why.find('[data-text]').html().trim();
+		return $.trim(why.find('[data-text]').html());
 	}
 	else{
-		return this.container.find('.why .why-text[default] [data-text]').html().trim();
+		return $.trim(this.container.find('.why .why-text[default] [data-text]').html());
 	}
 };
