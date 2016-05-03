@@ -5,9 +5,9 @@ body{
 .section {
 	padding-top: 154px;
 }
-.section p,
-.section ul,
-.section li{
+.row p,
+.row ul,
+.row li{
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 16px;
 }
@@ -22,6 +22,10 @@ body{
 
 .body-container {
 	background-color: #fff;
+}
+
+.label.label-default{
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 @media (min-width: 768px) {
