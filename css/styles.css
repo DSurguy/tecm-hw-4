@@ -1,8 +1,9 @@
 body{
-	padding-top: 128px;
+	padding-top: 154px;
+	background-color: #84928B;
 }
 .section {
-	padding-top: 128px;
+	padding-top: 154px;
 }
 .section p,
 .section ul,
@@ -19,11 +20,15 @@ body{
 	text-align: center;
 }
 
+.body-container {
+	background-color: #fff;
+}
+
 @media (min-width: 768px) {
 	body{
-		padding-top: 64px;
+		padding-top: 51px;
 	}
 	.section {
-		padding-top: 64px;
+		padding-top: 51px;
 	}
 }
